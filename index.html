@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calc">
+        <input type="text" id="display" readonly>
+            <div class="home">
+                <div class="left">
+                    <button onclick="clearDisplay('')" class="clear">C</button>
+                    <button onclick="appendDisplay('/')" class="operator">/</button>
+                    <button onclick="appendDisplay('*')" class="operator">x</button>
+                    <button onclick="appendDisplay('7')">7</button>
+                    <button onclick="appendDisplay('8')">8</button>
+                    <button onclick="appendDisplay('9')">9</button>
+                    <button onclick="appendDisplay('4')">4</button>
+                    <button onclick="appendDisplay('5')">5</button>
+                    <button onclick="appendDisplay('6')">6</button>
+                    <button onclick="appendDisplay('1')">1</button>
+                    <button onclick="appendDisplay('2')">2</button>
+                    <button onclick="appendDisplay('3')">3</button>
+                    <button onclick="appendDisplay('0')" class="col">0</button>
+                    <button onclick="appendDisplay('.')">.</button>
+                </div>
+                <div class="right">
+                    <button onclick="appendDisplay('-')" class="operator">-</button>
+                    <button onclick="appendDisplay('+')" class="operator row">+</button>
+                    <button onclick="calculate('=')" class="operator row">=</button>
+                </div>
+            </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
